@@ -104,25 +104,68 @@ img {
   margin-top: 2.5rem;
   height: 40rem;
 }
-.information .swiper {
-  display: flex;
+.information .swiper-slide {
+  position: relative;
 }
-.information .swiper img {
+.information .swiper-slide img {
   border-radius: 1rem;
   object-fit: cover;
   height: 33rem;
 }
-.information__buttons-carrousel {
+.information__buttons-container {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
 }
+.information__btn-carrousel {
+  border: 1px solid #ECEBEA;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  font-size: 1.7rem;
+}
 .information .swiper-pagination {
   position: static;
   color: #000;
   width: auto;
+  font-size: 1.4rem;
+}
+.information .carrousel__texts-container {
+  background-color: rgba(0, 0, 0, 0.411);
+  position: absolute;
+  z-index: 999;
+  bottom: 0.4rem;
+  width: 100%;
+  left: 0;
+  border-radius: 0 0 1rem 1rem;
+  color: #ffffff;
+}
+.information .carrousel__texts-container h2 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.information .carrousel__texts-container p {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+}
+.information .carrousel__texts-container button {
+  border-radius: 0.5rem;
+  width: 90%;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: #F97316;
+  color: #ffffff;
+  font-weight: 500;
+  transition: all 0.3s;
+  z-index: 9999;
+}
+.information .carrousel__texts-container button:hover {
+  background-color: #bf5911;
+}
+.information .carrousel__texts-container button i {
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=app.css.map */

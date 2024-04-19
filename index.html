@@ -59,25 +59,47 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="assets/image/IMG01.svg" alt="">
-                        </div>
-
-                        <div class="swiper-slide">
                             <img src="assets/image/IMG02.svg" alt="">
                         </div>
 
                         <div class="swiper-slide">
+                            <img src="assets/image/IMG01.svg" alt="">
+
+                            <div class="carrousel__texts-container">
+                                <h2>Faça sua encomenda</h2>
+                                <p>Venha se deliciar com os nosso incríveis produtos.</p>
+                                <button>
+                                    <span>Fazer encomenda</span>
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
                             <img src="assets/image/IMG03.svg" alt="">
+
+                            <div class="carrousel__texts-container">
+                                <h2>Acesse o nosso cardápio</h2>
+                                <p>Conheça o nosso cardápio</p>
+                                <button>
+                                    <span>Fazer encomenda</span>
+                                    <i class="fa-solid fa-book-open"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="information__buttons-carrousel">
-                    <div><i class="fa-solid fa-arrow-left"></i></div>
+                <div class="information__buttons-container">
+                    <div class="information__btn-carrousel">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
 
                     <div class="swiper-pagination"></div>
 
-                    <div><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="information__btn-carrousel">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
 
                 </div>
             </div>
@@ -94,10 +116,19 @@
                 clickable: true,
             },
             navigation: {
-                nextEl: ".fa-arrow-left",
-                prevEl: ".fa-arrow-right",
+                nextEl: ".fa-arrow-right",
+                prevEl: ".fa-arrow-left",
             },
-            loop: true
+            loop: true,
+            breakpoints: {
+                50: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 15
+                },
+            }
         });
     </script>
 

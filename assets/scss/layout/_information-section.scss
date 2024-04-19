@@ -1,3 +1,5 @@
+@use '../base/colors' as color;
+
 .information {
     margin-top: 3rem;
     padding: 0 2rem;
@@ -15,19 +17,17 @@
         height: 40rem;
     }
 
-    .swiper {
-        display: flex;
-        // border-radius: 1rem;
+    .swiper-slide {
+        position: relative;
 
         img {
             border-radius: 1rem;
             object-fit: cover;
             height: 33rem;
         }
-
     }
 
-    &__buttons-carrousel {
+    &__buttons-container {
         margin-top: 2rem;
         display: flex;
         justify-content: center;
@@ -35,10 +35,59 @@
         gap: 3rem;
     }
 
+    &__btn-carrousel {
+        border: 1px solid #ECEBEA;
+        padding: .5rem .7rem;
+        border-radius: 50%;
+        font-size: 1.7rem;
+    }
+
     .swiper-pagination {
         position: static;
         color: #000;
-        // height: max-content;
         width: auto;
+        font-size: 1.4rem;
+    }
+
+    .carrousel__texts-container {
+        background-color: rgba(0, 0, 0, 0.411);
+        position: absolute;
+        z-index: 999;
+        bottom: .4rem;
+        width: 100%;
+        left: 0;
+        border-radius: 0 0 1rem 1rem;
+        color: color.$white-primary;
+
+        h2 {
+            font-size: 2.3rem;
+            text-transform: uppercase;
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-top: .5rem;
+            font-size: 1.3rem;
+        }
+
+        button {
+            border-radius: .5rem;
+            width: 90%;
+            padding: 1rem;
+            margin: 2rem 0;
+            background-color: color.$orange-primary;
+            color: color.$white-primary;
+            font-weight: 500;
+            transition: all .3s;
+            z-index: 9999;
+
+            &:hover {
+                background-color: #bf5911;
+            }
+
+            i {
+                margin-left: 1rem;
+            }
+        }
     }
 }
