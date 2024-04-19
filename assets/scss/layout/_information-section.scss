@@ -40,6 +40,7 @@
         padding: .5rem .7rem;
         border-radius: 50%;
         font-size: 1.7rem;
+        background-color: transparent;
     }
 
     .swiper-pagination {
@@ -79,7 +80,6 @@
             color: color.$white-primary;
             font-weight: 500;
             transition: all .3s;
-            z-index: 9999;
 
             &:hover {
                 background-color: #bf5911;
@@ -87,6 +87,7 @@
 
             i {
                 margin-left: 1rem;
+                font-size: 1.8rem;
             }
         }
     }

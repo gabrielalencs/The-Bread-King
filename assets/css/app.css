@@ -124,6 +124,7 @@ img {
   padding: 0.5rem 0.7rem;
   border-radius: 50%;
   font-size: 1.7rem;
+  background-color: transparent;
 }
 .information .swiper-pagination {
   position: static;
@@ -159,13 +160,13 @@ img {
   color: #ffffff;
   font-weight: 500;
   transition: all 0.3s;
-  z-index: 9999;
 }
 .information .carrousel__texts-container button:hover {
   background-color: #bf5911;
 }
 .information .carrousel__texts-container button i {
   margin-left: 1rem;
+  font-size: 1.8rem;
 }
 
 /*# sourceMappingURL=app.css.map */
