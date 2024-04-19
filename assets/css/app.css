@@ -6,6 +6,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 a,
 button {
   text-decoration: none;
@@ -14,6 +18,42 @@ button {
 
 button {
   border: none;
+}
+
+img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .home {
+    position: relative;
+  }
+}
+.home__container-image {
+  width: 100%;
+}
+.home__container-social {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .home__container-social {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    flex-direction: column;
+  }
+}
+.home__btn-social {
+  border: 1px solid #E7E5E4;
+  background-color: #ffffff;
+  padding: 0.8rem 0.7rem;
+  border-radius: 0.5rem;
+}
+.home__btn-social i {
+  font-size: 1.9rem;
 }
 
 /*# sourceMappingURL=app.css.map */

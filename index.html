@@ -7,9 +7,40 @@
     <link rel="shortcut icon" href="assets/image/favicon.ico" type="image/x-icon">
     <!-- Link CSS -->
     <link rel="stylesheet" href="assets/css/app.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>The Bread King | Sua Jornada pelo Sabor Autêntico</title>
 </head>
 <body>
-    
+    <main>
+        <section class="home">
+            <div class="home__container-image">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="assets/image/BannerMobile.svg">
+                    <source media="(max-width: 1200px)" srcset="assets/image/Banner.svg">
+                    <img src="assets/image/BannerMobile.svg" alt="Banner Company">
+                </picture>
+            </div>
+
+            <div class="home__container-social">
+                <button class="home__btn-social">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </button>
+
+                <button class="home__btn-social">
+                    <i class="fa-brands fa-github"></i>
+                </button>
+                
+                <button class="home__btn-social">
+                    <i class="fa-solid fa-envelope"></i>
+                </button>
+                
+                <button class="home__btn-social">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

@@ -7,6 +7,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 a,
 button {
     text-decoration: none;
@@ -15,4 +19,8 @@ button {
 
 button {
     border: none;
+}
+
+img {
+    width: 100%;
 }
