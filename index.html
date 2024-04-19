@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,15 @@
     <!-- Link CSS -->
     <link rel="stylesheet" href="assets/css/app.css">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <title>The Bread King | Sua Jornada pelo Sabor Autêntico</title>
 </head>
+
 <body>
     <main class="limit-content">
         <section class="home">
@@ -31,11 +37,11 @@
                 <button class="home__btn-social">
                     <i class="fa-brands fa-github"></i>
                 </button>
-                
+
                 <button class="home__btn-social">
                     <i class="fa-solid fa-envelope"></i>
                 </button>
-                
+
                 <button class="home__btn-social">
                     <i class="fa-brands fa-whatsapp"></i>
                 </button>
@@ -45,6 +51,49 @@
                 <i class="fa-solid fa-arrow-down"></i>
             </div>
         </section>
+
+        <section class="information">
+            <h1 class="information__title">Seja bem-vindo á uma experiência irresistível</h1>
+
+            <div class="information__carrousel">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/image/IMG01.svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/IMG02.svg" alt="">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/IMG03.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "fraction",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true
+        });
+    </script>
+    
 </body>
+
 </html>
