@@ -104,6 +104,22 @@ img {
   margin-top: 2.5rem;
   height: 40rem;
 }
+.information .swiper-mobile {
+  display: flex;
+}
+@media (min-width: 768px) {
+  .information .swiper-mobile {
+    display: none;
+  }
+}
+.information .swiper-desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .information .swiper-desktop {
+    display: flex;
+  }
+}
 .information .swiper-slide {
   position: relative;
 }

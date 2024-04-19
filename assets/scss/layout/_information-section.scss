@@ -1,4 +1,5 @@
 @use '../base/colors' as color;
+@use '../base/breakpoints' as media;
 
 .information {
     margin-top: 3rem;
@@ -16,6 +17,23 @@
         margin-top: 2.5rem;
         height: 40rem;
     }
+
+    .swiper-mobile {
+        display: flex;
+
+        @include media.smallTablets {
+            display: none;
+        }
+    }
+
+    .swiper-desktop {
+        display: none;
+
+        @include media.smallTablets {
+            display: flex;
+        }
+    }
+    
 
     .swiper-slide {
         position: relative;
