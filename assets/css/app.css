@@ -100,13 +100,29 @@ img {
   font-weight: 900;
   text-transform: uppercase;
 }
-.information__carrousel {
+.information__carrousel-container {
   margin-top: 2.5rem;
   height: 40rem;
 }
 .information .swiper {
   display: flex;
-  height: 39rem;
+}
+.information .swiper img {
+  border-radius: 1rem;
+  object-fit: cover;
+  height: 33rem;
+}
+.information__buttons-carrousel {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.information .swiper-pagination {
+  position: static;
+  color: #000;
+  width: auto;
 }
 
 /*# sourceMappingURL=app.css.map */

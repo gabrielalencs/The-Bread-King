@@ -55,7 +55,7 @@
         <section class="information">
             <h1 class="information__title">Seja bem-vindo á uma experiência irresistível</h1>
 
-            <div class="information__carrousel">
+            <div class="information__carrousel-container">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -70,10 +70,15 @@
                             <img src="assets/image/IMG03.svg" alt="">
                         </div>
                     </div>
+                </div>
 
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                <div class="information__buttons-carrousel">
+                    <div><i class="fa-solid fa-arrow-left"></i></div>
+
                     <div class="swiper-pagination"></div>
+
+                    <div><i class="fa-solid fa-arrow-right"></i></div>
+
                 </div>
             </div>
         </section>
@@ -82,18 +87,20 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper(".mySwiper", {
+            spaceBetween: 15,
             pagination: {
                 el: ".swiper-pagination",
                 type: "fraction",
+                clickable: true,
             },
             navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
+                nextEl: ".fa-arrow-left",
+                prevEl: ".fa-arrow-right",
             },
             loop: true
         });
     </script>
-    
+
 </body>
 
 </html>
