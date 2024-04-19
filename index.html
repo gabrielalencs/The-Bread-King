@@ -13,12 +13,12 @@
     <title>The Bread King | Sua Jornada pelo Sabor Autêntico</title>
 </head>
 <body>
-    <main>
+    <main class="limit-content">
         <section class="home">
             <div class="home__container-image">
                 <picture>
                     <source media="(max-width: 768px)" srcset="assets/image/BannerMobile.svg">
-                    <source media="(max-width: 1200px)" srcset="assets/image/Banner.svg">
+                    <source media="(min-width: 768px)" srcset="assets/image/Banner.svg">
                     <img src="assets/image/BannerMobile.svg" alt="Banner Company">
                 </picture>
             </div>
@@ -39,6 +39,10 @@
                 <button class="home__btn-social">
                     <i class="fa-brands fa-whatsapp"></i>
                 </button>
+            </div>
+
+            <div class="home__btn-arrow">
+                <i class="fa-solid fa-arrow-down"></i>
             </div>
         </section>
     </main>

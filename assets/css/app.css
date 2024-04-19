@@ -6,6 +6,11 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.limit-content {
+  max-width: 138rem;
+  margin: 0 auto;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -31,6 +36,12 @@ img {
 }
 .home__container-image {
   width: 100%;
+  max-width: 150rem;
+}
+@media (min-width: 1200px) {
+  .home__container-image img {
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
 }
 .home__container-social {
   margin-top: 1.5rem;
@@ -54,6 +65,28 @@ img {
 }
 .home__btn-social i {
   font-size: 1.9rem;
+}
+.home__btn-arrow {
+  position: absolute;
+  border: 0.2rem solid #ffffff;
+  bottom: 1.5rem;
+  left: 53%;
+  margin-left: -50px;
+  color: #ffffff;
+  padding: 0.5rem 0.9rem;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  animation: moveUpDown 1s ease-in-out infinite;
+}
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(-20%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

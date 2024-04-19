@@ -8,6 +8,13 @@
 
     &__container-image {
         width: 100%;
+        max-width: 150rem;
+
+        img {
+            @include media.desktops {
+                border-radius: 0 0 1.5rem 1.5rem;
+            }
+        }
     }
 
     &__container-social {
@@ -32,6 +39,33 @@
 
         i {
             font-size: 1.9rem;
+        }
+    }
+
+    &__btn-arrow {
+        position: absolute;
+        border: .2rem solid color.$white-primary;
+        bottom: 1.5rem;
+        left: 53%;
+        margin-left: -50px;
+        color: color.$white-primary;
+        padding: .5rem .9rem;
+        border-radius: 50%;
+        font-size: 1.8rem;
+        animation: moveUpDown 1s ease-in-out infinite;
+    }
+
+    @keyframes moveUpDown {
+
+        0%,
+        100% {
+            transform: translateY(-20%);
+            animation-timing-function: cubic-bezier(.8, 0, 1, 1);
+        }
+
+        50% {
+            transform: none;
+            animation-timing-function: cubic-bezier(0, 0, .2, 1);
         }
     }
 }
