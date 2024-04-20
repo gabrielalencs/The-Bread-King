@@ -33,7 +33,7 @@ img {
   position: relative;
 }
 @media (min-width: 1400px) {
-  .home__container-image img {
+  .home .home__container-image img {
     border-radius: 0 0 1.5rem 1.5rem;
   }
 }

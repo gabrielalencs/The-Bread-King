@@ -3,14 +3,10 @@
 
 .home {
     position: relative;
-    
-    &__container-image {
 
-        img {
-
-            @include media.desktops {
-                border-radius: 0 0 1.5rem 1.5rem;
-            }
+    @include media.desktops {
+        .home__container-image img {
+            border-radius: 0 0 1.5rem 1.5rem;
         }
     }
 
