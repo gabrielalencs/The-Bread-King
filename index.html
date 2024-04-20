@@ -80,7 +80,7 @@
                     </div>
                 </div>
 
-                <div class="buttons-container">
+                <div class="buttons-container buttons-container-about">
                     <button class="btn-carrousel btn-carrousel-about-left">
                         <i class="fa-solid fa-arrow-left"></i>
                     </button>
@@ -189,7 +189,9 @@
         });
 
         const swiperTwo = new Swiper("#swiper-two", {
-            spaceBetween: 15,
+            spaceBetween: 50,
+            slidesPerView: "auto",
+            centeredSlides: true,
             pagination: {
                 el: ".swiper-pagination-products",
                 type: "fraction",
@@ -201,11 +203,8 @@
             },
             loop: true,
             breakpoints: {
-                50: {
-                    slidesPerView: 1,
-                },
-                768: {
-                    slidesPerView: 3,
+                992: {
+                    slidesPerView: 6,
                     spaceBetween: 15
                 },
             }

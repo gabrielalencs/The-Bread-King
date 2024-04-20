@@ -7,8 +7,10 @@
     align-items: center;
     gap: 3rem;
     width: max-content;
+}
 
-    @include media.smallTablets {
+@include media.smallTablets {
+    .buttons-container-about {
         display: none;
     }
 }
@@ -21,7 +23,9 @@
     background-color: transparent;
 }
 
-.swiper-pagination, .swiper-pagination-about, .swiper-pagination-products {
+.swiper-pagination,
+.swiper-pagination-about,
+.swiper-pagination-products {
     position: static !important;
     color: #000;
     width: auto;
