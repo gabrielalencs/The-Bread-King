@@ -4,7 +4,7 @@
 
 .about {
     margin-top: 7rem;
-    padding: 0 2rem 2rem;
+    padding: 0 2rem 2.5rem;
     text-align: center;
     border-bottom: 1px solid #ECEBEA;
 
@@ -90,6 +90,10 @@
         justify-content: center;
         align-items: center;
         gap: 3rem;
+
+        @include media.smallTablets {
+            display: none;
+        }
     }
 
     &__btn-carrousel {
@@ -106,5 +110,4 @@
         width: auto;
         font-size: 1.4rem;
     }
-
 }

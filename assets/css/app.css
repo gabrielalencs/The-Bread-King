@@ -51,7 +51,7 @@ img {
 }
 @keyframes moveUpDown {
   0%, 100% {
-    transform: translateY(-20%);
+    transform: translateY(-30%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
   50% {
@@ -62,7 +62,7 @@ img {
 
 .about {
   margin-top: 7rem;
-  padding: 0 2rem 2rem;
+  padding: 0 2rem 2.5rem;
   text-align: center;
   border-bottom: 1px solid #ECEBEA;
 }
@@ -139,6 +139,11 @@ img {
   justify-content: center;
   align-items: center;
   gap: 3rem;
+}
+@media (min-width: 768px) {
+  .about__buttons-container {
+    display: none;
+  }
 }
 .about__btn-carrousel {
   border: 1px solid #ECEBEA;

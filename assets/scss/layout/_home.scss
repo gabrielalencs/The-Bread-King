@@ -24,10 +24,9 @@
     }
 
     @keyframes moveUpDown {
-
         0%,
         100% {
-            transform: translateY(-20%);
+            transform: translateY(-30%);
             animation-timing-function: cubic-bezier(.8, 0, 1, 1);
         }
 
