@@ -1,2 +1,13 @@
 @use '../base/colors' as color;
 @use '../base/breakpoints' as media;
+@use '../module/mixins' as mixin;
+
+.about {
+    margin-top: 4rem;
+    border-bottom: 1px solid #ECEBEA;
+    text-align: center;
+
+    &__title {
+        @include mixin.style-main-titles;
+    } 
+}

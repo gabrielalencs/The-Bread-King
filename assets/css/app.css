@@ -34,11 +34,7 @@ img {
     position: relative;
   }
 }
-.home__container-image {
-  width: 100%;
-  max-width: 150rem;
-}
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .home__container-image img {
     border-radius: 0 0 1.5rem 1.5rem;
   }
@@ -93,8 +89,12 @@ img {
   margin-top: 3rem;
   padding: 0 2rem 2rem;
   text-align: center;
-  margin-bottom: 5rem;
   border-bottom: 1px solid #ECEBEA;
+}
+@media (min-width: 1400px) {
+  .information {
+    padding: 0;
+  }
 }
 .information__title {
   font-size: 2.5rem;
@@ -105,49 +105,13 @@ img {
   margin-top: 2.5rem;
   height: 40rem;
 }
-.information .swiper-mobile {
-  display: flex;
-}
-@media (min-width: 768px) {
-  .information .swiper-mobile {
-    display: none;
-  }
-}
-.information .swiper-desktop {
-  display: none;
-}
-@media (min-width: 768px) {
-  .information .swiper-desktop {
-    display: flex;
-  }
-}
 .information .swiper-slide {
   position: relative;
 }
 .information .swiper-slide img {
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   object-fit: cover;
   height: 33rem;
-}
-.information__buttons-container {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 3rem;
-}
-.information__btn-carrousel {
-  border: 1px solid #ECEBEA;
-  padding: 0.5rem 0.7rem;
-  border-radius: 50%;
-  font-size: 1.7rem;
-  background-color: transparent;
-}
-.information .swiper-pagination {
-  position: static;
-  color: #000;
-  width: auto;
-  font-size: 1.4rem;
 }
 .information .carrousel__texts-container {
   background-color: rgba(0, 0, 0, 0.411);
@@ -184,6 +148,37 @@ img {
 .information .carrousel__texts-container button i {
   margin-left: 1rem;
   font-size: 1.8rem;
+}
+.information__buttons-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.information__btn-carrousel {
+  border: 1px solid #ECEBEA;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  background-color: transparent;
+}
+.information .swiper-pagination {
+  position: static;
+  color: #000;
+  width: auto;
+  font-size: 1.4rem;
+}
+
+.about {
+  margin-top: 4rem;
+  border-bottom: 1px solid #ECEBEA;
+  text-align: center;
+}
+.about__title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=app.css.map */
