@@ -12,6 +12,11 @@
         padding: 0;
     }
 
+    &__texts {
+        max-width: 78rem;
+        margin: 0 auto
+    }
+
     &__title {
        @include mixin.style-main-titles;
     }
@@ -101,6 +106,5 @@
         width: auto;
         font-size: 1.4rem;
     }
-
 
 }
