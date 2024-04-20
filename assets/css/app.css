@@ -60,35 +60,40 @@ img {
   }
 }
 
-.information {
+.about {
   margin-top: 8rem;
   padding: 0 2rem 2rem;
   text-align: center;
   border-bottom: 1px solid #ECEBEA;
 }
 @media (min-width: 1400px) {
-  .information {
+  .about {
     padding: 0;
   }
 }
-.information__title {
-  font-size: 2.5rem;
+.about__title {
+  font-size: 2.3rem;
   font-weight: 900;
   text-transform: uppercase;
 }
-.information__carrousel-container {
+.about__text {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.about__carrousel-container {
   margin-top: 2.5rem;
   height: 40rem;
 }
-.information .swiper-slide {
+.about .swiper-slide {
   position: relative;
 }
-.information .swiper-slide img {
+.about .swiper-slide img {
   border-radius: 1.5rem;
   object-fit: cover;
   height: 33rem;
 }
-.information .carrousel__texts-container {
+.about .carrousel__texts-container {
   background-color: rgba(0, 0, 0, 0.411);
   position: absolute;
   z-index: 999;
@@ -98,16 +103,16 @@ img {
   border-radius: 0 0 1rem 1rem;
   color: #ffffff;
 }
-.information .carrousel__texts-container h2 {
+.about .carrousel__texts-container h2 {
   font-size: 2.3rem;
   text-transform: uppercase;
   margin-top: 2rem;
 }
-.information .carrousel__texts-container p {
+.about .carrousel__texts-container p {
   margin-top: 0.5rem;
   font-size: 1.3rem;
 }
-.information .carrousel__texts-container button {
+.about .carrousel__texts-container button {
   border-radius: 0.5rem;
   width: 90%;
   padding: 1rem;
@@ -117,49 +122,32 @@ img {
   font-weight: 500;
   transition: all 0.3s;
 }
-.information .carrousel__texts-container button:hover {
+.about .carrousel__texts-container button:hover {
   background-color: #bf5911;
 }
-.information .carrousel__texts-container button i {
+.about .carrousel__texts-container button i {
   margin-left: 1rem;
   font-size: 1.8rem;
 }
-.information__buttons-container {
+.about__buttons-container {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
 }
-.information__btn-carrousel {
+.about__btn-carrousel {
   border: 1px solid #ECEBEA;
   padding: 0.5rem 0.7rem;
   border-radius: 50%;
   font-size: 1.7rem;
   background-color: transparent;
 }
-.information .swiper-pagination {
+.about .swiper-pagination {
   position: static;
   color: #000;
   width: auto;
   font-size: 1.4rem;
-}
-
-.about {
-  margin-top: 4rem;
-  border-bottom: 1px solid #ECEBEA;
-  text-align: center;
-}
-.about__title {
-  font-size: 2.5rem;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-.about__text {
-  text-align: left;
-  margin-top: 2rem;
-  font-size: 1.6rem;
-  font-weight: 400;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -3,18 +3,104 @@
 @use '../module/mixins' as mixin;
 
 .about {
-    margin-top: 4rem;
-    border-bottom: 1px solid #ECEBEA;
+    margin-top: 8rem;
+    padding: 0 2rem 2rem;
     text-align: center;
+    border-bottom: 1px solid #ECEBEA;
+
+    @include media.desktops {
+        padding: 0;
+    }
 
     &__title {
-        @include mixin.style-main-titles;
-    } 
+       @include mixin.style-main-titles;
+    }
 
     &__text {
-        text-align: left;
         margin-top: 2rem;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: 400;
     }
+
+    &__carrousel-container {
+        margin-top: 2.5rem;
+        height: 40rem;
+    }
+
+    .swiper-slide {
+        position: relative;
+
+        img {
+            border-radius: 1.5rem;
+            object-fit: cover;
+            height: 33rem;
+        }
+    }
+
+    .carrousel__texts-container {
+        background-color: rgba(0, 0, 0, 0.411);
+        position: absolute;
+        z-index: 999;
+        bottom: .4rem;
+        width: 100%;
+        left: 0;
+        border-radius: 0 0 1rem 1rem;
+        color: color.$white-primary;
+
+        h2 {
+            font-size: 2.3rem;
+            text-transform: uppercase;
+            margin-top: 2rem;
+        }
+
+        p {
+            margin-top: .5rem;
+            font-size: 1.3rem;
+        }
+
+        button {
+            border-radius: .5rem;
+            width: 90%;
+            padding: 1rem;
+            margin: 2rem 0;
+            background-color: color.$orange-primary;
+            color: color.$white-primary;
+            font-weight: 500;
+            transition: all .3s;
+
+            &:hover {
+                background-color: #bf5911;
+            }
+
+            i {
+                margin-left: 1rem;
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    &__buttons-container {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__btn-carrousel {
+        border: 1px solid #ECEBEA;
+        padding: .5rem .7rem;
+        border-radius: 50%;
+        font-size: 1.7rem;
+        background-color: transparent;
+    }
+
+    .swiper-pagination {
+        position: static;
+        color: #000;
+        width: auto;
+        font-size: 1.4rem;
+    }
+
+
 }
