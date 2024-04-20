@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +17,7 @@
 
     <title>The Bread King | Sua Jornada pelo Sabor Autêntico</title>
 </head>
+
 <body>
     <main class="limit-content">
         <section class="home">
@@ -43,7 +45,7 @@
             </div>
 
             <div class="about__carrousel-container">
-                <div class="swiper mySwiper">
+                <div class="swiper mySwiper" id="swiper-one">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="assets/image/IMG02.svg" alt="">
@@ -68,6 +70,7 @@
                             <div class="carrousel__texts-container">
                                 <h2>Acesse o nosso cardápio</h2>
                                 <p>Conheça o nosso cardápio</p>
+
                                 <button>
                                     <span>Ver Cardápio</span>
                                     <i class="fa-solid fa-book-open"></i>
@@ -77,14 +80,14 @@
                     </div>
                 </div>
 
-                <div class="about__buttons-container">
-                    <button class="about__btn-carrousel about__btn-carrousel-1">
+                <div class="buttons-container">
+                    <button class="btn-carrousel btn-carrousel-about-left">
                         <i class="fa-solid fa-arrow-left"></i>
                     </button>
 
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-pagination swiper-pagination-about"></div>
 
-                    <button class="about__btn-carrousel about__btn-carrousel-2">
+                    <button class="btn-carrousel btn-carrousel-about-right">
                         <i class="fa-solid fa-arrow-right"></i>
                     </button>
                 </div>
@@ -98,34 +101,103 @@
 
             <div class="products__texts">
                 <h2 class="products__title">Conheça nossos produtos</h2>
+
                 <p class="products__text">
-                    Descubra a variedade irresistível de nossos produtos artesanais. Da delicadeza dos nossos doces às crocantes opções de pães, temos algo especial para cada paladar. Delicie-se com a autenticidade e nossos sabores únicos.
+                    Descubra a variedade irresistível de nossos produtos artesanais. Da delicadeza dos nossos doces às
+                    crocantes opções de pães, temos algo especial para cada paladar. Delicie-se com a autenticidade e
+                    nossos sabores únicos.
                 </p>
                 <p class="products__text">
-                    Na The Bread King, cada item é cuidadosamente preparado para oferecer uma experiência única. Nossos pães são assados diariamente, utilizando ingredientes frescos e de alta qualidade. Além disso, nossos bolos e doces são feitos com dedicação, resultando em sobremesas que encantam os sentidos.
+                    Na The Bread King, cada item é cuidadosamente preparado para oferecer uma experiência única. Nossos
+                    pães são assados diariamente, utilizando ingredientes frescos e de alta qualidade. Além disso,
+                    nossos bolos e doces são feitos com dedicação, resultando em sobremesas que encantam os sentidos.
                 </p>
                 <p class="products__text">
-                    Visite-nos e descubra por que somos conhecidos por proporcionar momentos de puro prazer gastronômico.
+                    Visite-nos e descubra por que somos conhecidos por proporcionar momentos de puro prazer
+                    gastronômico.
                 </p>
             </div>
+
+            <div>
+                <div class="swiper mySwiper" id="swiper-two">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/image/Product01.svg" alt="product 1">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/Product02.svg" alt="product 2">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/Product03.svg" alt="product 3">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/Product04.svg" alt="product 4">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/Product05.svg" alt="product 5">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="assets/image/Product06.svg" alt="product 6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons-container">
+                    <button class="btn-carrousel btn-carrousel-products-left">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+
+                    <div class="swiper-pagination swiper-pagination-products"></div>
+
+                    <button class="btn-carrousel btn-carrousel-products-right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
         </section>
-
-
     </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper(".mySwiper", {
+        const swiper = new Swiper("#swiper-one", {
             spaceBetween: 15,
             pagination: {
-                el: ".swiper-pagination",
+                el: ".swiper-pagination-about",
                 type: "fraction",
                 clickable: true,
             },
             navigation: {
-                nextEl: ".fa-arrow-right",
-                prevEl: ".fa-arrow-left",
+                nextEl: ".btn-carrousel-about-right",
+                prevEl: ".btn-carrousel-about-left",
+            },
+            loop: true,
+            breakpoints: {
+                50: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 15
+                },
+            }
+        });
+
+        const swiperTwo = new Swiper("#swiper-two", {
+            spaceBetween: 15,
+            pagination: {
+                el: ".swiper-pagination-products",
+                type: "fraction",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".btn-carrousel-products-right",
+                prevEl: ".btn-carrousel-products-left",
             },
             loop: true,
             breakpoints: {
@@ -140,4 +212,5 @@
         });
     </script>
 </body>
+
 </html>

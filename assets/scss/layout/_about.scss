@@ -88,31 +88,4 @@
             }
         }
     }
-
-    &__buttons-container {
-        margin-top: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 3rem;
-
-        @include media.smallTablets {
-            display: none;
-        }
-    }
-
-    &__btn-carrousel {
-        border: 1px solid #ECEBEA;
-        padding: .5rem .7rem;
-        border-radius: 50%;
-        font-size: 1.7rem;
-        background-color: transparent;
-    }
-
-    .swiper-pagination {
-        position: static;
-        color: #000;
-        width: auto;
-        font-size: 1.4rem;
-    }
 }

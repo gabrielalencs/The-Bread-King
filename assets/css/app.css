@@ -139,34 +139,38 @@ img {
   margin-left: 1rem;
   font-size: 1.8rem;
 }
-.about__buttons-container {
-  margin-top: 2rem;
+
+.products {
+  margin-top: 6rem;
+}
+
+.buttons-container {
+  margin: 2rem auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  width: max-content;
 }
 @media (min-width: 768px) {
-  .about__buttons-container {
+  .buttons-container {
     display: none;
   }
 }
-.about__btn-carrousel {
+
+.btn-carrousel {
   border: 1px solid #ECEBEA;
   padding: 0.5rem 0.7rem;
   border-radius: 50%;
   font-size: 1.7rem;
   background-color: transparent;
 }
-.about .swiper-pagination {
-  position: static;
+
+.swiper-pagination, .swiper-pagination-about, .swiper-pagination-products {
+  position: static !important;
   color: #000;
   width: auto;
   font-size: 1.4rem;
-}
-
-.products {
-  margin-top: 6rem;
 }
 
 /*# sourceMappingURL=app.css.map */
