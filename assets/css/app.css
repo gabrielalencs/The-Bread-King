@@ -29,46 +29,21 @@ img {
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  .home {
-    position: relative;
-  }
+.home {
+  position: relative;
 }
 @media (min-width: 1400px) {
   .home__container-image img {
     border-radius: 0 0 1.5rem 1.5rem;
   }
 }
-.home__container-social {
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-@media (min-width: 768px) {
-  .home__container-social {
-    position: absolute;
-    right: 2rem;
-    bottom: 2rem;
-    flex-direction: column;
-  }
-}
-.home__btn-social {
-  border: 1px solid #E7E5E4;
-  background-color: #ffffff;
-  padding: 0.8rem 0.7rem;
-  border-radius: 0.5rem;
-}
-.home__btn-social i {
-  font-size: 1.9rem;
-}
 .home__btn-arrow {
   position: absolute;
-  border: 0.2rem solid #ffffff;
-  bottom: 1.5rem;
+  border: 0.2rem solid #0C0A09;
+  bottom: -5.5rem;
   left: 53%;
   margin-left: -50px;
-  color: #ffffff;
+  color: #0C0A09;
   padding: 0.5rem 0.9rem;
   border-radius: 50%;
   font-size: 1.8rem;
@@ -86,7 +61,7 @@ img {
 }
 
 .information {
-  margin-top: 3rem;
+  margin-top: 8rem;
   padding: 0 2rem 2rem;
   text-align: center;
   border-bottom: 1px solid #ECEBEA;
@@ -179,6 +154,12 @@ img {
   font-size: 2.5rem;
   font-weight: 900;
   text-transform: uppercase;
+}
+.about__text {
+  text-align: left;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=app.css.map */

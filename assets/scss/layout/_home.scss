@@ -2,53 +2,52 @@
 @use '../base/breakpoints' as media;
 
 .home {
-    @include media.smallTablets {
-        position: relative;
-    }
-
+    position: relative;
+    
     &__container-image {
         // width: 100%;
         // max-width: 150rem;
 
         img {
+
             @include media.desktops {
                 border-radius: 0 0 1.5rem 1.5rem;
             }
         }
     }
 
-    &__container-social {
-        margin-top: 1.5rem;
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
+    // &__container-social {
+    //     margin-top: 6.5rem;
+    //     display: flex;
+    //     justify-content: center;
+    //     gap: 2rem;
 
-        @include media.smallTablets {
-            position: absolute;
-            right: 2rem;
-            bottom: 2rem;
-            flex-direction: column;
-        }
-    }
+    //     @include media.smallTablets {
+    //         position: absolute;
+    //         right: 2rem;
+    //         bottom: 2rem;
+    //         flex-direction: column;
+    //     }
+    // }
 
-    &__btn-social {
-        border: 1px solid #E7E5E4;
-        background-color: color.$white-primary;
-        padding: .8rem .7rem;
-        border-radius: .5rem;
+    // &__btn-social {
+    //     border: 1px solid #E7E5E4;
+    //     background-color: color.$white-primary;
+    //     padding: .8rem .7rem;
+    //     border-radius: .5rem;
 
-        i {
-            font-size: 1.9rem;
-        }
-    }
+    //     i {
+    //         font-size: 1.9rem;
+    //     }
+    // }
 
     &__btn-arrow {
         position: absolute;
-        border: .2rem solid color.$white-primary;
-        bottom: 1.5rem;
+        border: .2rem solid color.$black-primary;
+        bottom: -5.5rem;
         left: 53%;
         margin-left: -50px;
-        color: color.$white-primary;
+        color: color.$black-primary;
         padding: .5rem .9rem;
         border-radius: 50%;
         font-size: 1.8rem;

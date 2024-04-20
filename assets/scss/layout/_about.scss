@@ -10,4 +10,11 @@
     &__title {
         @include mixin.style-main-titles;
     } 
+
+    &__text {
+        text-align: left;
+        margin-top: 2rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
 }
