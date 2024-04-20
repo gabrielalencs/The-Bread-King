@@ -41,7 +41,7 @@ img {
   position: absolute;
   border: 0.2rem solid #0C0A09;
   bottom: -5.5rem;
-  left: 53%;
+  left: 55%;
   margin-left: -50px;
   color: #0C0A09;
   padding: 0.5rem 0.9rem;
@@ -61,7 +61,7 @@ img {
 }
 
 .about {
-  margin-top: 8rem;
+  margin-top: 7rem;
   padding: 0 2rem 2rem;
   text-align: center;
   border-bottom: 1px solid #ECEBEA;
@@ -71,7 +71,7 @@ img {
     padding: 0;
   }
 }
-.about__texts {
+.about__container-texts {
   max-width: 78rem;
   margin: 0 auto;
 }

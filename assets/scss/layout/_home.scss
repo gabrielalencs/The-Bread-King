@@ -5,8 +5,6 @@
     position: relative;
     
     &__container-image {
-        // width: 100%;
-        // max-width: 150rem;
 
         img {
 
@@ -20,7 +18,7 @@
         position: absolute;
         border: .2rem solid color.$black-primary;
         bottom: -5.5rem;
-        left: 53%;
+        left: 55%;
         margin-left: -50px;
         color: color.$black-primary;
         padding: .5rem .9rem;

@@ -3,7 +3,7 @@
 @use '../module/mixins' as mixin;
 
 .about {
-    margin-top: 8rem;
+    margin-top: 7rem;
     padding: 0 2rem 2rem;
     text-align: center;
     border-bottom: 1px solid #ECEBEA;
@@ -12,13 +12,13 @@
         padding: 0;
     }
 
-    &__texts {
+    &__container-texts {
         max-width: 78rem;
         margin: 0 auto
     }
 
     &__title {
-       @include mixin.style-main-titles;
+        @include mixin.style-main-titles;
     }
 
     &__text {
