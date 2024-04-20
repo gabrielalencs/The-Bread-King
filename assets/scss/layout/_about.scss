@@ -30,6 +30,11 @@
     &__carrousel-container {
         margin-top: 2.5rem;
         height: 40rem;
+
+        @include media.smallTablets {
+            padding-bottom: 3rem;
+            height: max-content;
+        }
     }
 
     .swiper-slide {

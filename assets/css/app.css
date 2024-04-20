@@ -89,6 +89,12 @@ img {
   margin-top: 2.5rem;
   height: 40rem;
 }
+@media (min-width: 768px) {
+  .about__carrousel-container {
+    padding-bottom: 3rem;
+    height: max-content;
+  }
+}
 .about .swiper-slide {
   position: relative;
 }
@@ -157,6 +163,10 @@ img {
   color: #000;
   width: auto;
   font-size: 1.4rem;
+}
+
+.products {
+  margin-top: 6rem;
 }
 
 /*# sourceMappingURL=app.css.map */
