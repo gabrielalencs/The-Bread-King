@@ -10,8 +10,24 @@
 }
 
 @include media.smallTablets {
-    .buttons-container-about {
+    .buttons-container {
         display: none;
+    }
+}
+
+.images-products-mobile {
+    display: block;
+
+    @include media.smallTablets {
+        display: none !important;
+    }
+}
+
+.images-products-desktop {
+    display: none !important;
+
+    @include media.smallTablets {
+        display: block !important;
     }
 }
 
