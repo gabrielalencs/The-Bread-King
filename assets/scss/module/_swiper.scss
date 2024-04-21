@@ -15,22 +15,6 @@
     }
 }
 
-.images-products-mobile {
-    display: block;
-
-    @include media.smallTablets {
-        display: none !important;
-    }
-}
-
-.images-products-desktop {
-    display: none !important;
-
-    @include media.smallTablets {
-        display: block !important;
-    }
-}
-
 .btn-carrousel {
     border: 1px solid #ECEBEA;
     padding: .5rem .7rem;

@@ -161,24 +161,6 @@ img {
     display: none;
   }
 }
-.images-products-mobile {
-  display: block;
-}
-@media (min-width: 768px) {
-  .images-products-mobile {
-    display: none !important;
-  }
-}
-
-.images-products-desktop {
-  display: none !important;
-}
-@media (min-width: 768px) {
-  .images-products-desktop {
-    display: block !important;
-  }
-}
-
 .btn-carrousel {
   border: 1px solid #ECEBEA;
   padding: 0.5rem 0.7rem;
