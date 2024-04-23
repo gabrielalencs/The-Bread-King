@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +16,6 @@
 
     <title>The Bread King | Sua Jornada pelo Sabor Autêntico</title>
 </head>
-
 <body>
     <main class="limit-content">
         <section class="home">
@@ -187,7 +185,7 @@
             </div>
         </section>
 
-        <section class="contact limit-content">
+        <section class="contact">
             <div class="contact__texts">
                 <h2 class="contact__title">Localização e Contato</h2>
                 <h3 class="contact__subtitle">The Bread King</h3>
@@ -209,11 +207,13 @@
         <section class="qualities">
             <div class="qualities__informations">
                 <h2 class="qualities__title">Por que escolher a The Bread King?</h2>
+
                 <div class="qualities__qualities-container">
                     <div class="qualities__qualitie">
                         <div class="qualities__icon">
                             <i class="fa-solid fa-star"></i>
                         </div>
+
                         <div class="qualities__texts">
                             <h3>Ambiente Aconchegante</h3>
                             <p>
@@ -221,10 +221,12 @@
                             </p>
                         </div>
                     </div>
+
                     <div class="qualities__qualitie">
                         <div class="qualities__icon">
                             <i class="fa-solid fa-star"></i>
                         </div>
+
                         <div class="qualities__texts">
                             <h3>Produtos Frescos</h3>
                             <p>
@@ -232,10 +234,12 @@
                             </p>
                         </div>
                     </div>
+
                     <div class="qualities__qualitie">
                         <div class="qualities__icon">
                             <i class="fa-solid fa-star"></i>
                         </div>
+
                         <div class="qualities__texts">
                             <h3>Atendimento Personalizado
                             </h3>
@@ -244,10 +248,12 @@
                             </p>
                         </div>
                     </div>
+
                     <div class="qualities__qualitie">
                         <div class="qualities__icon">
                             <i class="fa-solid fa-star"></i>
                         </div>
+
                         <div class="qualities__texts">
                             <h3>Feedback Constante</h3>
                             <p>
@@ -255,10 +261,12 @@
                             </p>
                         </div>
                     </div>
+
                     <div class="qualities__qualitie">
                         <div class="qualities__icon">
                             <i class="fa-solid fa-star"></i>
                         </div>
+
                         <div class="qualities__texts">
                             <h3>Tradição e Dedicação</h3>
                             <p>
@@ -282,47 +290,7 @@
         </p>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper("#swiper-one", {
-            spaceBetween: 15,
-            pagination: {
-                el: ".swiper-pagination-about",
-                type: "fraction",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".btn-carrousel-about-right",
-                prevEl: ".btn-carrousel-about-left",
-            },
-            loop: true,
-            breakpoints: {
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 15,
-                    loop: false
-                }
-            }
-        });
-
-        const swiperTwo = new Swiper("#swiper-two", {
-            spaceBetween: 70,
-            slidesPerView: "auto",
-            centeredSlides: true,
-            pagination: {
-                el: ".swiper-pagination-products",
-                type: "fraction",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".btn-carrousel-products-right",
-                prevEl: ".btn-carrousel-products-left",
-            },
-            loop: true,
-            grabCursor: true,
-        });
-    </script>
+    <script src="assets/js/swiper.js"></script>
 </body>
-
 </html>

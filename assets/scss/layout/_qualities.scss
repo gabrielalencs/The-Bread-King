@@ -40,7 +40,7 @@
         display: flex;
         flex-direction: column;
         gap: 3rem;
-        
+
         @include media.smallTablets {
             align-items: center;
         }
@@ -71,12 +71,12 @@
             font-size: 1.6rem;
             font-weight: 300;
         }
-        
+
     }
 
     &__container-image {
         margin-top: 5rem;
-        
+
         @include media.smallTablets {
             margin-top: 7rem;
             text-align: center;
@@ -88,7 +88,7 @@
     }
 
     &__image {
-        width: 100% ;
+        width: 100%;
         max-width: 70rem;
     }
 }
