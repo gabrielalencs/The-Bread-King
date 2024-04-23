@@ -238,17 +238,28 @@ img {
 }
 
 .contact {
+  margin-top: 6rem;
   background-image: url(../image/Contact.svg);
   background-position: cover;
   padding: 5rem 4rem;
   color: #ffffff;
 }
-.contact__texts {
-  padding: 0 1rem;
-}
 @media (min-width: 768px) {
-  .contact__texts {
-    padding: 0 2rem;
+  .contact {
+    margin-top: 10rem;
+  }
+}
+@media (min-width: 992px) {
+  .contact {
+    padding: 7rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1400px) {
+  .contact {
+    border-radius: 1.5rem;
   }
 }
 .contact__title {
@@ -272,10 +283,16 @@ img {
   opacity: 0.7;
   padding: 2rem;
   border-radius: 1rem;
+  max-width: 50rem;
 }
 @media (min-width: 768px) {
   .contact__informations-container {
     padding: 2rem 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .contact__informations-container {
+    margin-top: 0;
   }
 }
 .contact__information {

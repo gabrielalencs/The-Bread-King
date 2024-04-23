@@ -2,17 +2,25 @@
 @use '../base/colors' as color;
 
 .contact {
+    margin-top: 6rem;
     background-image: url(../image/Contact.svg);
     background-position: cover;
     padding: 5rem 4rem;
     color: color.$white-primary;
 
-    &__texts {
-        padding: 0 1rem;
+    @include media.smallTablets {
+        margin-top: 10rem;
+    }
 
-        @include media.smallTablets {
-            padding: 0 2rem;
-        }
+    @include media.laptops {
+        padding: 7rem 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @include media.desktops {
+        border-radius: 1.5rem;
     }
 
     &__title {
@@ -37,9 +45,14 @@
         opacity: .7;
         padding: 2rem;
         border-radius: 1rem;
+        max-width: 50rem;
 
         @include media.smallTablets {
             padding: 2rem 3rem;
+        }
+
+        @include media.laptops {
+            margin-top: 0;
         }
     }
 
