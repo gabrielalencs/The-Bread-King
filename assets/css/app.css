@@ -146,6 +146,22 @@ img {
 .products .swiper-slide {
   width: 150px;
 }
+.products .products__images-mobile {
+  display: block;
+}
+@media (min-width: 768px) {
+  .products .products__images-mobile {
+    display: none;
+  }
+}
+.products .products__images-desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .products .products__images-desktop {
+    display: flex;
+  }
+}
 
 .buttons-container {
   margin: 2rem auto 0;

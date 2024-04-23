@@ -8,4 +8,20 @@
         width: 150px;
     }
 
+    .products__images-mobile {
+        display: block;
+
+        @include media.smallTablets {
+            display: none;
+        }
+    }
+
+    .products__images-desktop {
+        display: none;
+
+        @include media.smallTablets {
+            display: flex;
+        }
+    }
+
 }
