@@ -110,7 +110,7 @@ img {
 }
 @media (min-width: 768px) {
   .about__carrousel-container {
-    padding-bottom: 10em;
+    padding-bottom: 8rem;
     height: max-content;
   }
 }
@@ -170,7 +170,7 @@ img {
 }
 @media (min-width: 768px) {
   .products {
-    margin-top: 10rem;
+    margin-top: 8rem;
   }
 }
 @media (min-width: 1400px) {
@@ -240,7 +240,9 @@ img {
 .contact {
   margin-top: 6rem;
   background-image: url(../image/Contact.svg);
-  background-position: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 5rem 4rem;
   color: #ffffff;
 }
@@ -254,7 +256,8 @@ img {
     padding: 7rem 6rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20rem;
   }
 }
 @media (min-width: 1400px) {
@@ -303,6 +306,11 @@ img {
 }
 .contact__information:nth-child(2) {
   margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .contact__information {
+    font-size: 1.7rem;
+  }
 }
 .contact__information i {
   font-size: 3.5rem;

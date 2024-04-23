@@ -4,7 +4,9 @@
 .contact {
     margin-top: 6rem;
     background-image: url(../image/Contact.svg);
-    background-position: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     padding: 5rem 4rem;
     color: color.$white-primary;
 
@@ -16,7 +18,8 @@
         padding: 7rem 6rem;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 20rem;
     }
 
     @include media.desktops {
@@ -64,6 +67,10 @@
 
         &:nth-child(2) {
             margin-top: 2rem;
+        }
+
+        @include media.smallTablets {
+            font-size: 1.7rem;
         }
 
         i {
