@@ -3,20 +3,28 @@
 
 .carte-overlay {
     background-color: rgba(12, 10, 9, 0.705);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
     z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .2s;
 
     .carte-container {
-        margin: 7rem auto 0;
+        margin: 5rem auto 0;
         width: 90%;
+        max-width: 123rem;
         background-color: color.$body-color;
         z-index: 20;
         border-radius: 1.5rem;
         padding: 2.5rem;
+        height: 64rem;
 
         @include media.smallTablets {
             padding: 3.5rem;
@@ -36,7 +44,7 @@
     }
 
     .carte__title {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 600;
         text-align: center;
         background-image: linear-gradient(to bottom, #F97316 40%, #ba540b);
@@ -61,7 +69,7 @@
         grid-template-columns: repeat(1, minmax(0, 1fr));
         gap: 4rem;
         overflow-y: scroll;
-        height: 500px;
+        height: 50rem;
 
         &::-webkit-scrollbar {
             width: 6px;

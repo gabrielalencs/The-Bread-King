@@ -452,20 +452,27 @@ img {
 
 .carte-overlay {
   background-color: rgba(12, 10, 9, 0.705);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
   z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s;
 }
 .carte-overlay .carte-container {
-  margin: 7rem auto 0;
+  margin: 5rem auto 0;
   width: 90%;
+  max-width: 123rem;
   background-color: #F5F5F0;
   z-index: 20;
   border-radius: 1.5rem;
   padding: 2.5rem;
+  height: 64rem;
 }
 @media (min-width: 768px) {
   .carte-overlay .carte-container {
@@ -483,7 +490,7 @@ img {
   font-size: 3rem;
 }
 .carte-overlay .carte__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   text-align: center;
   background-image: linear-gradient(to bottom, #F97316 40%, #ba540b);
@@ -506,7 +513,7 @@ img {
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 4rem;
   overflow-y: scroll;
-  height: 500px;
+  height: 50rem;
 }
 .carte-overlay .carte__container-itens::-webkit-scrollbar {
   width: 6px;
