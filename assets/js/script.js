@@ -4,15 +4,15 @@ const btnCloseCarte = document.getElementById('btn-close-carte');
 const body = document.querySelector('body');
 
 btnShowCarte.addEventListener('click', () => {
-    
+
     containerCarte.style.opacity = 1;
     containerCarte.style.pointerEvents = 'all';
     body.style.overflowY = 'hidden';
-    
+
 });
 
 btnCloseCarte.addEventListener('click', () => {
-    
+
     containerCarte.style.opacity = 0;
     containerCarte.style.pointerEvents = 'none';
     body.style.overflowY = 'scroll';
