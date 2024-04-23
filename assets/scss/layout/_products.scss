@@ -10,7 +10,7 @@
         margin-top: 10rem;
     }
 
-     @include media.desktops {
+    @include media.desktops {
         .products__image {
             border-radius: 1.5rem;
         }
@@ -38,7 +38,7 @@
         margin-top: 5rem;
     }
 
-    .swiper-slide  {
+    .swiper-slide {
         width: 16rem;
 
         @include media.smallTablets {
