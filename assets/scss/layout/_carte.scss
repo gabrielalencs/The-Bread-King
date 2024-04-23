@@ -1,2 +1,61 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
+
+.carte-overlay {
+    background-color: rgba(12, 10, 9, 0.705);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+    .carte-container {
+        margin: 7rem auto 0;
+        width: 90%;
+        background-color: color.$white-primary;
+        z-index: 20;
+        border-radius: 1.5rem;
+        padding: 2.5rem;
+    }
+
+    .carte__title {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .carte__container-itens {
+        margin-top: 3rem;
+        border: 1px solid #e0e0e0;
+        border-radius: 1.5rem;
+        padding: 4rem;
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 4rem;
+    }
+
+    .carte__item {
+        border: 1px solid #e0e0e0;
+        border-radius: 1.5rem;
+        padding: 2rem;
+        text-align: center;
+        background: #ffffff;
+        box-shadow: 14px 14px 57px #dedede,
+            -14px -14px 57px #ffffff;
+
+        h3 {
+            font-size: 2.1rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-top: .5rem;
+            font-size: 1.3rem;
+
+            &:nth-child(3) {
+                margin-top: 1rem;
+                font-weight: 700;
+            }
+        }
+    }
+}
