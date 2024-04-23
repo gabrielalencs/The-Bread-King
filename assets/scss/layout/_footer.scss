@@ -1,2 +1,27 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
+
+.footer {
+    margin-top: 13rem;
+    border-top: 1px solid #000;
+    padding: 5rem;
+    text-align: center;
+
+    &__image {
+        width: 15rem;
+        filter: brightness(0) saturate(100%);
+
+        @include media.smallTablets {
+            width: 20rem;
+        }
+    }
+
+    &__copyright {
+        margin-top: 2.5rem;
+        font-size: 1.8rem;
+
+        @include media.smallTablets {
+            font-size: 2rem;
+        }
+    }
+}

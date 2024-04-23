@@ -403,11 +403,11 @@ img {
 }
 .qualities__container-image {
   margin-top: 5rem;
-  text-align: center;
 }
 @media (min-width: 768px) {
   .qualities__container-image {
     margin-top: 7rem;
+    text-align: center;
   }
 }
 @media (min-width: 992px) {
@@ -416,7 +416,33 @@ img {
   }
 }
 .qualities__image {
-  max-width: 65rem;
+  width: 100%;
+  max-width: 70rem;
+}
+
+.footer {
+  margin-top: 13rem;
+  border-top: 1px solid #000;
+  padding: 5rem;
+  text-align: center;
+}
+.footer__image {
+  width: 15rem;
+  filter: brightness(0) saturate(100%);
+}
+@media (min-width: 768px) {
+  .footer__image {
+    width: 20rem;
+  }
+}
+.footer__copyright {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+}
+@media (min-width: 768px) {
+  .footer__copyright {
+    font-size: 2rem;
+  }
 }
 
 .buttons-container {
