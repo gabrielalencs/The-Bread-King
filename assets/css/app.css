@@ -282,8 +282,7 @@ img {
 }
 .contact__informations-container {
   margin-top: 3rem;
-  background-color: #0C0A09;
-  opacity: 0.7;
+  background-color: rgba(12, 10, 9, 0.4823529412);
   padding: 2rem;
   border-radius: 1rem;
   max-width: 50rem;
