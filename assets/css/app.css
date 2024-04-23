@@ -327,7 +327,12 @@ img {
 
 .qualities {
   margin-top: 8rem;
-  padding: 0 5rem;
+  padding: 0 2rem 0 3rem;
+}
+@media (min-width: 768px) {
+  .qualities {
+    padding: 0 5rem;
+  }
 }
 @media (min-width: 992px) {
   .qualities {
@@ -384,7 +389,7 @@ img {
   max-width: 44rem;
 }
 .qualities__qualitie i {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #F97316;
 }
 .qualities__qualitie h3 {
@@ -397,8 +402,13 @@ img {
   font-weight: 300;
 }
 .qualities__container-image {
-  margin-top: 7rem;
+  margin-top: 5rem;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .qualities__container-image {
+    margin-top: 7rem;
+  }
 }
 @media (min-width: 992px) {
   .qualities__container-image {

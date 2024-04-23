@@ -4,7 +4,11 @@
 
 .qualities {
     margin-top: 8rem;
-    padding: 0 5rem;
+    padding: 0 2rem 0 3rem;
+
+    @include media.smallTablets {
+        padding: 0 5rem;
+    }
 
     @include media.laptops {
         display: flex;
@@ -53,7 +57,7 @@
         max-width: 44rem;
 
         i {
-            font-size: 6rem;
+            font-size: 5rem;
             color: color.$orange-primary;
         }
 
@@ -71,8 +75,12 @@
     }
 
     &__container-image {
-        margin-top: 7rem;
+        margin-top: 5rem;
         text-align: center;
+
+        @include media.smallTablets {
+            margin-top: 7rem;
+        }
 
         @include media.laptops {
             flex: 1;
