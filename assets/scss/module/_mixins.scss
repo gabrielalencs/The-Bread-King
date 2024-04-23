@@ -1,5 +1,22 @@
+@use '../base/breakpoints' as media;
+@use '../base/colors' as color;
+
 @mixin style-main-titles {
     font-size: 2.3rem;
     font-weight: 900;
     text-transform: uppercase;
+
+    @include media.smallTablets {
+        font-size: 3rem;
+    }
+}
+
+@mixin style-main-texts {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    @include media.smallTablets {
+        font-size: 1.7rem;
+    }
 }

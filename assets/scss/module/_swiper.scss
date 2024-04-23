@@ -9,7 +9,7 @@
     width: max-content;
 }
 
-@include media.smallTablets {
+@include media.laptops {
     .buttons-container {
         display: none;
     }

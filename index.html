@@ -118,7 +118,7 @@
                 </p>
             </div>
 
-            <div>
+            <div class="products__carrosel-container">
                 <div class="swiper mySwiper products__images-mobile" id="swiper-two">
                     <div class="swiper-wrapper images-products-mobile">
                         <div class="swiper-slide">
@@ -215,7 +215,7 @@
         });
 
         const swiperTwo = new Swiper("#swiper-two", {
-            spaceBetween: 50,
+            spaceBetween: 70,
             slidesPerView: "auto",
             centeredSlides: true,
             pagination: {
@@ -228,12 +228,7 @@
                 prevEl: ".btn-carrousel-products-left",
             },
             loop: true,
-            breakpoints: {
-                992: {
-                    slidesPerView: 6,
-                    spaceBetween: 15
-                },
-            }
+            grabCursor: true,
         });
     </script>
 </body>

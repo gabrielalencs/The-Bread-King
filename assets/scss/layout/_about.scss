@@ -3,7 +3,7 @@
 @use '../module/mixins' as mixin;
 
 .about {
-    margin-top: 7rem;
+    margin-top: 8rem;
     padding: 0 2rem 2.5rem;
     text-align: center;
     border-bottom: 1px solid #ECEBEA;
@@ -14,7 +14,11 @@
 
     &__container-texts {
         max-width: 78rem;
-        margin: 0 auto
+        margin: 0 auto;
+
+        @include media.smallTablets {
+            max-width: 90rem
+        }
     }
 
     &__title {
@@ -22,17 +26,15 @@
     }
 
     &__text {
-        margin-top: 2rem;
-        font-size: 1.4rem;
-        font-weight: 400;
+        @include mixin.style-main-texts;
     }
 
     &__carrousel-container {
-        margin-top: 2.5rem;
+        margin-top: 4.5rem;
         height: 40rem;
 
         @include media.smallTablets {
-            padding-bottom: 3rem;
+            padding-bottom: 10em;
             height: max-content;
         }
     }
@@ -44,6 +46,10 @@
             border-radius: 1.5rem;
             object-fit: cover;
             height: 33rem;
+
+            @include media.smallTablets {
+                height: 40rem;
+            }
         }
     }
 

@@ -1,26 +1,67 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
+@use '../module/mixins' as mixin;
 
 .products {
     margin-top: 6rem;
+    text-align: center;
 
-    .swiper-slide  {
-        width: 150px;
+    @include media.smallTablets {
+        margin-top: 10rem;
     }
 
-    .products__images-mobile {
-        display: block;
-
-        @include media.smallTablets {
-            display: none;
+     @include media.desktops {
+        .products__image {
+            border-radius: 1.5rem;
         }
     }
 
-    .products__images-desktop {
-        display: none;
+    &__texts {
+        max-width: 100rem;
+        margin: 4rem auto 0;
+        padding: 0 2rem;
+    }
+
+    &__title {
+        @include mixin.style-main-titles;
+    }
+
+    &__text {
+        @include mixin.style-main-texts;
+
+        &:nth-child(4) {
+            font-weight: 500;
+        }
+    }
+
+    &__carrosel-container {
+        margin-top: 5rem;
+    }
+
+    .swiper-slide  {
+        width: 16rem;
 
         @include media.smallTablets {
+            width: 18rem;
+        }
+    }
+
+    &__images-mobile {
+        display: block;
+
+        @include media.laptops {
+            display: none !important;
+        }
+    }
+
+    &__images-desktop {
+        display: none;
+        overflow: hidden;
+
+        @include media.laptops {
             display: flex;
+            justify-content: center;
+            gap: 6rem;
         }
     }
 
