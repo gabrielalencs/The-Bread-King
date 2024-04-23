@@ -1,2 +1,69 @@
 @use '../base/breakpoints' as media;
 @use '../base/colors' as color;
+
+.contact {
+    background-image: url(../image/Contact.svg);
+    background-position: cover;
+    padding: 5rem 4rem;
+    color: color.$white-primary;
+
+    &__texts {
+        padding: 0 1rem;
+
+        @include media.smallTablets {
+            padding: 0 2rem;
+        }
+    }
+
+    &__title {
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    &__subtitle {
+        font-size: 3rem;
+        text-transform: uppercase;
+        font-weight: 900;
+
+        @include media.smallTablets {
+            font-size: 4.5rem;
+        }
+    }
+
+    &__informations-container {
+        margin-top: 3rem;
+        background-color: color.$black-primary;
+        opacity: .7;
+        padding: 2rem;
+        border-radius: 1rem;
+
+        @include media.smallTablets {
+            padding: 2rem 3rem;
+        }
+    }
+
+    &__information {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1.4rem;
+
+        &:nth-child(2) {
+            margin-top: 2rem;
+        }
+
+        i {
+            font-size: 3.5rem;
+            color: color.$orange-primary;
+
+            @include media.smallTablets {
+                font-size: 4rem;
+            }
+        }
+
+        address {
+            font-style: normal;
+        }
+    }
+}

@@ -237,6 +237,69 @@ img {
   }
 }
 
+.contact {
+  background-image: url(../image/Contact.svg);
+  background-position: cover;
+  padding: 5rem 4rem;
+  color: #ffffff;
+}
+.contact__texts {
+  padding: 0 1rem;
+}
+@media (min-width: 768px) {
+  .contact__texts {
+    padding: 0 2rem;
+  }
+}
+.contact__title {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.contact__subtitle {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+@media (min-width: 768px) {
+  .contact__subtitle {
+    font-size: 4.5rem;
+  }
+}
+.contact__informations-container {
+  margin-top: 3rem;
+  background-color: #0C0A09;
+  opacity: 0.7;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+@media (min-width: 768px) {
+  .contact__informations-container {
+    padding: 2rem 3rem;
+  }
+}
+.contact__information {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.4rem;
+}
+.contact__information:nth-child(2) {
+  margin-top: 2rem;
+}
+.contact__information i {
+  font-size: 3.5rem;
+  color: #F97316;
+}
+@media (min-width: 768px) {
+  .contact__information i {
+    font-size: 4rem;
+  }
+}
+.contact__information address {
+  font-style: normal;
+}
+
 .buttons-container {
   margin: 2rem auto 0;
   display: flex;
