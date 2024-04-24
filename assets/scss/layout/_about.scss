@@ -74,15 +74,19 @@
             font-size: 1.3rem;
         }
 
-        button {
+        button,
+        a {
+            display: block;
             border-radius: .5rem;
             width: 90%;
             padding: 1rem;
-            margin: 2rem 0;
+            margin: 2rem auto;
             background-color: color.$orange-primary;
             color: color.$white-primary;
             font-weight: 500;
             transition: all .3s;
+            font-size: 1.8rem;
+
 
             &:hover {
                 background-color: #bf5911;
@@ -90,7 +94,7 @@
 
             i {
                 margin-left: 1rem;
-                font-size: 1.8rem;
+                font-size: 2.2rem;
             }
         }
     }

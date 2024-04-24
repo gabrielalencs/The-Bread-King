@@ -37,31 +37,4 @@
     &__carrosel-container {
         margin-top: 5rem;
     }
-
-    .swiper-slide {
-        width: 16rem;
-
-        @include media.smallTablets {
-            width: 18rem;
-        }
-    }
-
-    &__images-mobile {
-        display: block;
-
-        @include media.laptops {
-            display: none !important;
-        }
-    }
-
-    &__images-desktop {
-        display: none;
-        overflow: hidden;
-
-        @include media.laptops {
-            display: flex;
-            justify-content: center;
-            gap: 6rem;
-        }
-    }
 }

@@ -9,6 +9,10 @@
     @include media.smallTablets {
         font-size: 3rem;
     }
+
+    span {
+        color: color.$orange-primary;
+    }
 }
 
 @mixin style-main-texts {
