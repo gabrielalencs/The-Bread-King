@@ -108,7 +108,7 @@ img {
 }
 .about__text {
   margin-top: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 @media (min-width: 768px) {
@@ -227,7 +227,7 @@ img {
 }
 .products__text {
   margin-top: 2rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 @media (min-width: 768px) {
