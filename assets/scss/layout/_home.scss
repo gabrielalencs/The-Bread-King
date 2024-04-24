@@ -14,13 +14,17 @@
         position: absolute;
         border: .2rem solid color.$black-primary;
         bottom: -5.5rem;
-        left: 55%;
+        left: 58%;
         margin-left: -50px;
         color: color.$black-primary;
         padding: .5rem .9rem;
         border-radius: 50%;
         font-size: 1.8rem;
         animation: moveUpDown 1s ease-in-out infinite;
+
+        @include media.extraSmallDevices {
+            left: 53%;
+        }
     }
 
     @keyframes moveUpDown {

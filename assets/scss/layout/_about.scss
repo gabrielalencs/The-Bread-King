@@ -62,11 +62,16 @@
         left: 0;
         border-radius: 0 0 1rem 1rem;
         color: color.$white-primary;
+        padding: 0 2rem;
 
         h2 {
-            font-size: 2.3rem;
+            font-size: 2rem;
             text-transform: uppercase;
             margin-top: 2rem;
+
+            @include media.smallTablets {
+                font-size: 2.3rem;
+            }
         }
 
         p {
@@ -85,8 +90,7 @@
             color: color.$white-primary;
             font-weight: 500;
             transition: all .3s;
-            font-size: 1.8rem;
-
+            font-size: 1.6rem;
 
             &:hover {
                 background-color: #bf5911;
@@ -94,8 +98,14 @@
 
             i {
                 margin-left: 1rem;
-                font-size: 2.2rem;
+                font-size: 1.8rem;
+
+                @include media.extraSmallDevices {
+                    font-size: 2.2rem;
+                }
             }
+
+            
         }
     }
 }

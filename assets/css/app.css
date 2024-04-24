@@ -49,13 +49,18 @@ img {
   position: absolute;
   border: 0.2rem solid #0C0A09;
   bottom: -5.5rem;
-  left: 55%;
+  left: 58%;
   margin-left: -50px;
   color: #0C0A09;
   padding: 0.5rem 0.9rem;
   border-radius: 50%;
   font-size: 1.8rem;
   animation: moveUpDown 1s ease-in-out infinite;
+}
+@media (min-width: 640px) {
+  .home__btn-arrow {
+    left: 53%;
+  }
 }
 @keyframes moveUpDown {
   0%, 100% {
@@ -143,11 +148,17 @@ img {
   left: 0;
   border-radius: 0 0 1rem 1rem;
   color: #ffffff;
+  padding: 0 2rem;
 }
 .about .carrousel__texts-container h2 {
-  font-size: 2.3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .about .carrousel__texts-container h2 {
+    font-size: 2.3rem;
+  }
 }
 .about .carrousel__texts-container p {
   margin-top: 0.5rem;
@@ -164,7 +175,7 @@ img {
   color: #ffffff;
   font-weight: 500;
   transition: all 0.3s;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 .about .carrousel__texts-container button:hover,
 .about .carrousel__texts-container a:hover {
@@ -173,7 +184,13 @@ img {
 .about .carrousel__texts-container button i,
 .about .carrousel__texts-container a i {
   margin-left: 1rem;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
+}
+@media (min-width: 640px) {
+  .about .carrousel__texts-container button i,
+  .about .carrousel__texts-container a i {
+    font-size: 2.2rem;
+  }
 }
 
 .products {
