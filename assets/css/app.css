@@ -25,6 +25,10 @@ button {
   cursor: pointer;
 }
 
+a {
+  color: #ffffff;
+}
+
 button {
   border: none;
 }
